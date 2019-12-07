@@ -1,0 +1,9 @@
+<h2>{{liv.titre}}</h2>
+<p>
+    Acteur: {{liv.acteur}} prix : {{liv.prix}} DT 
+    <br>
+    <input type="number" [ngModel]="liv.reduction"/><button>%</button>
+    <button (click)="onPromo(liv.reduction,ind)" class="btn btn-success"> Mettre en promo</button>
+    <button class="btn btn-danger">Annuler</button>
+    {{onPromo(liv.reduction,ind)}}
+</p>

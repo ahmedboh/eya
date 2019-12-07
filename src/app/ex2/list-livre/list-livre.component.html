@@ -1,0 +1,6 @@
+<h1 style="text-align: center;">liste de livres</h1>
+<ul class="list-group">
+    <li *ngFor="let t of tab;let i=index" [ngClass]="{'list-group-item':true,'list-group-item-success':Promo(i) }" >
+    <app-livre [liv]="t" [ind]="i"></app-livre>
+    </li>
+</ul>
